@@ -1,0 +1,1 @@
+{"lints":[{"severity":1,"value":"server\\server.js::12: Method 'onTicketCreateHandler' has a complexity of 21."}],"metricData":{}}

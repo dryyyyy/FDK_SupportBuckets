@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for server\server.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">server/</a> server.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.78% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>35/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>28/40</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.78% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>35/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'
+let helpers = require('./helpers');
+&nbsp;
+exports = {
+&nbsp;
+  events: [
+    { event: 'onTicketCreate', callback: 'onTicketCreateHandler' }
+  ],
+&nbsp;
+  // args is a JSON block containing the payload information.
+  // args['iparam'] will contain the installation parameter values.
+  onTicketCreateHandler: function(args) {
+    let apiKey = args.iparams.apiKey;
+    let ticketId = args.data.ticket.id;
+    let ticketContent = args.data.ticket.description_text;    
+&nbsp;
+    let kr_words_str = args.iparams.words_KR;
+    let kr_words_arr = kr_words_str.split(' ');
+&nbsp;
+    let cn_words_str = args.iparams.words_CN;
+    let cn_words_arr = cn_words_str.split(' ');
+&nbsp;
+    let de_words_str = args.iparams.words_DE;
+    let de_words_arr = de_words_str.split(' ');
+&nbsp;
+    let fr_words_str = args.iparams.words_FR;
+    let fr_words_arr = fr_words_str.split(' ');
+&nbsp;
+    let pt_words_str = args.iparams.words_PT;
+    let pt_words_arr = pt_words_str.split(' ');
+&nbsp;
+    let es_words_str = args.iparams.words_ES;
+    let es_words_arr = es_words_str.split(' ');
+&nbsp;
+    let ru_words_str = args.iparams.words_RU;
+    let ru_words_arr = ru_words_str.split(' ');
+&nbsp;
+    let it_words_str = args.iparams.words_IT;
+    let it_words_arr = it_words_str.split(' ');
+&nbsp;
+    let nl_words_str = args.iparams.words_NL;
+    let nl_words_arr = nl_words_str.split(' ');
+&nbsp;
+    let jp_words_str = args.iparams.words_JP;
+    let jp_words_arr = jp_words_str.split(' ');
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(kr_words_arr, ticketContent) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >kr_words_str !== '')</span> {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportKR", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(cn_words_arr, ticketContent) &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >cn_words_str !== '')</span> {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportCN", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(de_words_arr, ticketContent) &amp;&amp; de_words_str !== '') {
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportDE", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(fr_words_arr, ticketContent) &amp;&amp; fr_words_str !== '') {
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportFR", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(es_words_arr, ticketContent) &amp;&amp; es_words_str !== '') {
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportES", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(pt_words_arr, ticketContent) &amp;&amp; pt_words_str !== '') {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportPT", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(it_words_arr, ticketContent) &amp;&amp; it_words_str !== '') {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportIT", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(ru_words_arr, ticketContent) &amp;&amp; ru_words_str !== '') {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportRU", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(jp_words_arr, ticketContent) &amp;&amp; jp_words_str !== '') {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportJP", ticketId, apiKey);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (helpers.check(nl_words_arr, ticketContent) &amp;&amp; nl_words_str !== '') {      
+<span class="cstat-no" title="statement not covered" >      helpers.setBucket("SupportNL", ticketId, apiKey);</span>
+    }
+  }
+};</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Nov 26 2018 18:24:26 GMT+0700 (RTZ 6 (зима))
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

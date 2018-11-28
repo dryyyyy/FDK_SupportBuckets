@@ -1,0 +1,68 @@
+{
+    "apiKey": {
+       "display_name": "API Key",
+       "description": "The API Key for your Freshdesk account is required to use the app.",
+       "type": "text",
+       "required": true
+    },
+    "words_KR": {
+        "display_name": "SupportKR",
+        "description": "List of words to match for SupportKR bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_CN": {
+        "display_name": "SupportCN",
+        "description": "List of words to match for SupportCN bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_RU": {
+        "display_name": "SupportRU",
+        "description": "List of words to match for SupportRU bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_DE": {
+        "display_name": "SupportDE",
+        "description": "List of words to match for SupportDE bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_FR": {
+        "display_name": "SupportFR",
+        "description": "List of words to match for SupportFR bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_ES": {
+        "display_name": "SupportES",
+        "description": "List of words to match for SupportES bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_PT": {
+        "display_name": "SupportPT",
+        "description": "List of words to match for SupportPT bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_JP": {
+        "display_name": "SupportJP",
+        "description": "List of words to match for SupportJP bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_IT": {
+        "display_name": "SupportIT",
+        "description": "List of words to match for SupportIT bucket.",
+        "type":"text",
+        "required": false
+    },
+    "words_NL": {
+        "display_name": "SupportNL",
+        "description": "List of words to match for SupportNL bucket.",
+        "type":"text",
+        "required": false
+    }
+}
